@@ -1,24 +1,34 @@
 <!DOCTYPE html>   
 <html>   
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
+<head> 
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+     <link rel="stylesheet" href="index.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">  
 <title> Login Page </title>  
 <style>   
 Body {  
-  font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
+  font-family: Calibri, Helvetica, sans-serif; 
+  background-image: url(./images/back.jpg); 
+  
 }  
 button {   
-       background-color: #4CAF50;   
+       background-color: skyblue;   
        width: 100%;  
-        color: orange;   
+        color: black        ;   
         padding: 15px;   
         margin: 10px 0px;   
         border: none;   
         cursor: pointer;   
          }   
  form {   
-        border: 3px solid #f1f1f1;   
+        /* border: 3px solid #f1f1f1; */
+
+           
     }   
  input[type=text], input[type=password] {   
         width: 100%;   
@@ -40,8 +50,11 @@ button {
      
  .container {   
         padding: 25px;   
-        background-color: lightblue;  
     }   
+  *{
+    color: white;
+  }
+    
 </style>   
 </head>    
 <body>    
@@ -52,7 +65,7 @@ button {
             <input type="text" placeholder="Enter Username" name="username" required>  
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
+            <button type="submit" >Login</button>   
             <input type="checkbox" checked="checked"> Remember me   
             <button type="button" class="cancelbtn"> Cancel</button>   
             Forgot <a href="#"> password? </a>   
